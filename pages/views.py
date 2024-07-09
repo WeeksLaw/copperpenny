@@ -11,3 +11,6 @@ def about(request):
 
 def blog(request):
     return render(request, "pages/portfolio.html", {})
+
+def gallery(request):
+    return render(request, "pages/gallery.html", {})
