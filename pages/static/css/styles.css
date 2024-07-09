@@ -7,7 +7,7 @@ body {
       font-family: 'Times New Roman', Times, serif;
       font-size: 22pt;
       text-align: center;
-      color: white;
+      color: black;
   }
   
   h2 {
@@ -92,3 +92,32 @@ body {
       float: none;
     }
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    -webkit-column-count: 2;
+    -moz-coloumn-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+
+    -webkit-column-rule: 1px single grey;
+    -moz-column-rule: 1px single grey;
+    column-rule: 1px single grey;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+img:hover {
+    box-shadow: 2px 2px 4px #000000;
+}
