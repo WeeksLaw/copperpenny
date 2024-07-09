@@ -1,0 +1,94 @@
+body {
+    margin: 5;
+    line-height: 1.5;
+  }
+  
+  h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 22pt;
+      text-align: center;
+      color: white;
+  }
+  
+  h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    text-align: center;
+  }
+  
+  p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15pt;
+      padding: 1px 10px;
+  }
+  
+  form {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15pt;
+      padding: 1px 10px;
+  }
+  
+  #bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+  }
+  
+  .container {
+      position: absolute;
+      margin: 10px;
+      width: 1000px;
+      border-radius: 10px;
+      background-color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 200px;
+    height: 1000px;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: lightgrey;
+    color: black;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: white;
+    color: black;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
