@@ -9,8 +9,5 @@ def contact(request):
 def about(request):
     return render(request, "pages/about.html", {})
 
-def blog(request):
-    return render(request, "pages/portfolio.html", {})
-
 def gallery(request):
     return render(request, "pages/gallery.html", {})
